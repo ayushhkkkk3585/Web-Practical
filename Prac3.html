@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainCont">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p>Department:</p>
+            <div class="container">
+                <div class="radio-group">
+                    <input type="radio" id="it" name="department" value="IT" required>
+                    <label class="one" for="it">IT</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="comps" name="department" value="Comps" required>
+                    <label class="one" for="comps">Comps</label>
+                </div>
+            </div>
+            <label for="food">Food Item:</label>
+            <select id="food" name="food" required>
+                <option value="">Select an item</option>
+                <option value="vada_pav">Vada Pav: 10rs</option>
+                <option value="samosa_pav">Samosa Pav: 12rs</option>
+                <option value="misal_pav">Misal Pav: 35rs</option>
+                <option value="poha">Poha: 15rs</option>
+            </select>
+            <label for="pickup_time">Pickup Time:</label>
+            <select id="pickup_time" name="pickup_time" required>
+                <option value="">Select a time</option>
+                <option value="9am">9am</option>
+                <option value="12pm">12pm</option>
+                <option value="3pm">3pm</option>
+            </select>
+            <button onclick="func()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function func() {
+            alert("Order Placed Succefully")
+
+        }
+    </script>
+</body>
+
+</html>
